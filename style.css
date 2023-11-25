@@ -1,0 +1,259 @@
+body {
+  background-color: hsl(0, 100%, 100%);
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 3rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+header > img {
+  display: block;
+  text-align: center;
+  background-color: #d7c5d3;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  margin-top: 20px;
+  border-radius: 12px;
+  background-color: #ffd1dc;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+}
+
+nav li {
+  display: inline-block;
+  float: left;
+  height: 40px;
+  width: 80px;
+  margin-left: 5%;
+}
+
+nav ul li a {
+  display: block;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 10%;
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+  font-weight: 680;
+  text-align: center;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #ea3f94;
+}
+
+input {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+#btn-search {
+  float: right;
+  color: #ff007f;
+  padding: 6px;
+  margin-top: 8px;
+}
+
+section {
+  display: flex;
+}
+
+article {
+  flex: 1;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+/* 
+  Seeting the First Article of the main Element to Display Background image and promotion text 
+*/
+#blur-article {
+  background-image: url("./background.jpg");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#blur-article h1 {
+  color: #333;
+  font-family: tahoma;
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+h1 div {
+  text-align: right;
+  font-size: 40px;
+  margin-left: 0px;
+  width: auto;
+}
+
+.message {
+  background-color: yellow;
+  color: #333;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 0.5rem;
+  top: 0.2rem;
+  left: 0px;
+  animation: openclose 5s ease-in-out infinite;
+}
+
+.word1,
+.word2,
+.word3 {
+  font-family: tahoma;
+}
+
+@keyframes openclose {
+  0% {
+    top: 0.2rem;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 230px;
+  }
+  30% {
+    top: 0.2rem;
+    width: 230px;
+  }
+  33% {
+    top: 0.2rem;
+    width: 0;
+  }
+  35% {
+    top: 0.2rem;
+    width: 0;
+  }
+  38% {
+    top: -4.5rem;
+  }
+  48% {
+    top: -4.5rem;
+    width: 190px;
+  }
+  62% {
+    top: -4.5rem;
+    width: 190px;
+  }
+  66% {
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
+  }
+  86% {
+    top: -9rem;
+    width: 285px;
+  }
+  95% {
+    top: -9rem;
+    width: 285px;
+  }
+
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+/* Designing the 3 Articles as cards contains Title image and text */
+.small-cards {
+  border: 1px solid #c2c2c2;
+  border-radius: 10, 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 1%;
+  border-radius: 25px 1px 25px 1px;
+  margin: 5px;
+}
+
+/* This is create a transition when mouse is hovered over */
+.small-cards:hover {
+  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+  transition: 0.5s ease;
+}
+.small-cards > img {
+  border-radius: 25px 1px 25px 1px;
+}
+
+/* Styling the Table inside the article */
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ff007f;
+  text-align: center;
+}
+table td,
+table th {
+  border: 1px solid #ffd1dc;
+  padding: 8px;
+}
+
+table tr:hover {
+  background-color: #d4d4d4;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #ffd1dc;
+}
+
+#imp_notice {
+  color: red;
+}
+
+/* Footer Styling */
+footer {
+  display: flex;
+  align-items: center;
+}
+footer div {
+  flex: 1;
+  padding: 10px;
+}
+footer div p {
+  text-align: right;
+}
